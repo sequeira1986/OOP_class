@@ -19,7 +19,6 @@ class Person:
     def zostarnem(self, cislo):
         self.age = self.age + cislo
 
-
 allan = Person("Allan", 37, "muz", "Ekonom", "Bratislava", "1.67")
 allan.pozdrav()
 allan.vydlisko()
@@ -27,6 +26,6 @@ allan.profesia()
 allan.rod()
 print(allan.age)
 allan.zostarnem(10)
-print(allan.age)
+print(f"so {allan.age} stary")
 
 
