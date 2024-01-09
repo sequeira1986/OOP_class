@@ -3,7 +3,7 @@ class Person:
     def __init__(self, name, age, gender, occupation, addresa, vysku, farba_oci):
         self.__nombre = name #el nombre senala a el atributo que definimos arriva
         self.__edad = age
-        self.gender = gender
+        self.__gender = gender
         self.occupation = occupation
         self.addresa = addresa
         self.vysku = vysku
@@ -11,7 +11,7 @@ class Person:
     def pozdrav(self):
         print(f"ahoj volam sa {self.__nombre} a man {self.__edad} rokov , a mam {self.farba_oci} oci")
     def rod(self):
-        print(f"som {self.gender}")
+        print(f"som {self.__gender}")
     def vydlisko(self):
         print(f"ahoj zijem v  {self.addresa} a mam {self.vysku}")
     def profesia(self):
